@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Exercício 1 - Calcula Soma</title>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Calcula a Soma</h1>
+    </header>
+    <main class="main">
+        <form id="form">
+            <div class="inputs">
+                <label for="numero01">Digite o primeiro número:</label> <br>
+                <input type="number" id="numero01" class="input" placeholder="Digite o primeiro número..." autofocus> <br>
+                <span class="span-require">Campo obrigatório...</span>
+            </div>
+            <p class="sinal-soma"> + </span>
+            <div class="inputs">
+                <label for="numero02">Digite o primeiro número:</label> <br>
+                <input type="number" id="numero02" class="input" placeholder="Digite o segundo número..."> <br>
+                <span class="span-require">Campo obrigatório...</span>
+            </div>
+            <button onclick="fazSoma()">Calcular</button>
+            <span id="span-resultado"></span>
+        </form>
+    </main>
+</body>
+
+</html>
