@@ -1,16 +1,16 @@
 const form = document.getElementById("form");
-const numero01 = document.getElementById("numero01");
-const numero02 = document.getElementById("numero02");
 const spanResultado = document.getElementById("span-resultado");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const valorNumero01 = Number(numero01.value);
-  const valorNumero02 = Number(numero02.value);
-  fazSoma(valorNumero01, valorNumero02);
+  fazSoma();
 });
 
-function fazSoma(numero01, numero02) {
+function fazSoma() {
+  const numero01 = Number(document.getElementById("numero01").value);
+  const numero02 = Number(document.getElementById("numero02").value);
+  
+  spanResultado.innerHTML = "";
   let soma = numero01 + numero02;
   spanResultado.innerHTML = `Resultado: ${soma}`;
 }
